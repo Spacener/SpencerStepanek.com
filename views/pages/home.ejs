@@ -28,7 +28,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>satalight</title>
+    <title>Spencer  Stepanek</title>
 </head>
 
 <body>
@@ -70,11 +70,24 @@
             <div class="tRegion t3 parallax" data-value="13"></div>
         </a>
 
+
+        <section id="scrollIcon" class="demo">
+            <a href=""><span></span></a>
+        </section>
+
     </div>
 
-    <a href="#portrait">
-        <img src="/resources/img/portrait.png" class="w3-round parallax" alt="Spencer Stepanek" id="portrait" data-value="-1">
-    </a>
+    <div id="about">
+
+        <div id="aboutText">
+            <h1>Spencer</h1>
+            <p>Composer, multi-instrumentalist, producer, and software development enthusiast. She currently pursues a BS in Computer Science and a BMus in Music Composition at the University of Colorado, Boulder. Enjoys long walks on the beach, and picnics</p>
+        </div>
+
+        <img src="/resources/img/portrait.png" class="w3-round parallax" alt="Spencer Stepanek" id="portrait" data-value="0">        </a>
+
+    </div>
+
 
     <script type="text/javascript">
         document.addEventListener("mousemove", parallax);
@@ -82,8 +95,8 @@
             document.querySelectorAll(".parallax").forEach(function(move){
 
                 var parallaxFactor = move.getAttribute("data-value");
-                var x = (((e.clientX - 600) * parallaxFactor) / 250);
-                var y = (((e.clientY - 600) * parallaxFactor) / 250);
+                var x = (((e.clientX - 800) * parallaxFactor) / 250);
+                var y = (((e.clientY - 800) * parallaxFactor) / 250);
 
                 move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
             });
