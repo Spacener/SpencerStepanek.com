@@ -15,6 +15,9 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!--    The Scripts.js file-->
+    <script type="text/javascript" src="resources/js/scripts.js"></script>
+
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
@@ -25,67 +28,13 @@
     <title>Spencer Stepanek</title>
 </head>
 
-<body>
+<body onload="loadPostData()">
 
 <%- include('../partials/header'); -%>
 
-<section class="py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-lg-5">
-                <div class="row mx-0 text-center text-light small rounded">
-                    <div class="col bg-danger p-1">
-                        danger
-                    </div>
-                    <div class="col bg-primary p-1">
-                        primary
-                    </div>
-                    <div class="col bg-success p-1">
-                        success
-                    </div>
-                    <div class="col bg-info p-1">
-                        info
-                    </div>
-                    <div class="col bg-warning p-1">
-                        warning
-                    </div>
-                    <div class="col bg-light text-dark p-1">
-                        light
-                    </div>
-                    <div class="col bg-dark p-1">
-                        dark
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!--    <div class="container">-->
-<!--        <div id="particles-js"></div>-->
-<!--        <div class="title text-center text-white">-->
-<!--            <h1>Text over the particles.</h1>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--<div class="container">-->
-<!--</div>-->
-
-
-<!--<div id="mainMenu">-->
-
-<!--    <div class="mmLine line1"></div>-->
-<!--    <div class="mmLine line2"></div>-->
-<!--    <div class="mmLine line3"></div>-->
-
-<!--</div>-->
-
-
-<!-- for tsParticles -->
-<!--    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.19.2/dist/tsparticles.min.js"></script>-->
-<!--    <script src="../scripts/background.js"></script>-->
-<!---->
+<div id="posts">
+<!--    %- include('../partials/post'); -%-->
+</div>
 
 </body>
 </html>

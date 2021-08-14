@@ -1,4 +1,24 @@
 
+function loadPostData() {
+    $.getJSON('post_data.json', function(data) {
+        let posts = $('#posts');
+
+
+        for ( let post of data.en ) {
+            posts.append(
+                '<div class="post">' +
+                    '<div class="postHeader">' +
+                        '8/13/21 - This is a thought' +
+                    '</div>' +
+                    '<br/>' +
+                    '<div class="postBody">' +
+                        'Hi!' +
+                    '</div>' +
+                '</div>'
+            )
+        }
+    });
+};
 
 
 function loadMusicData() {
