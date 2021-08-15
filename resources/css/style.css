@@ -9,8 +9,8 @@ body{
 
 /*Blog styles*/
 .postList {
-    display: flex;
     justify-content: center;
+    margin-bottom: 4vw;
 }
 .post {
     align-self: center;
@@ -21,6 +21,7 @@ body{
     margin-top: 4vw;
     border: solid white 5px;
     border-radius: 4px;
+    font-size: 1vw;
 }
 .postHeader {
     width: 100%;
@@ -29,12 +30,13 @@ body{
     padding-top: 0.6vw;
     padding-left: 1vw;
     font-weight: bold;
+    font-size: 1.25vw;
     /*padding-top: 1vw;*/
     text-align: left;
 }
 .postBody {
     padding: 2vw;
-    padding-top: 0.4vw;
+    padding-top: 0vw;
 }
 
 

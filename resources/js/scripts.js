@@ -5,19 +5,34 @@ function loadPostData() {
 
 
         for ( let post of data.en ) {
+
+            // if ( post.lineBreak == 1 ) {
+                let assemble = ''
+                for ( p in post.content ) {
+                    assemble = assemble + '<br>' + post.content[p] + '<br>'
+                }
+            // } else {
+            //     let assemble = ''
+            //     for ( p in post.content ) {
+            //         assemble = assemble + '<br>' + post.content[p]
+            //     }
+            // }
+
             posts.append(
                 '<div class="post">' +
                     '<div class="postHeader">' +
-                        '8/13/21 - This is a thought' +
+                        post.date + ' - ' + post.title +
                     '</div>' +
-                    '<br/>' +
                     '<div class="postBody">' +
-                        'Hi!' +
+                        assemble +
                     '</div>' +
                 '</div>'
             )
         }
     });
+
+    // Then, sort all posts by date order
+
 };
 
 
