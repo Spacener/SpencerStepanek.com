@@ -6,6 +6,10 @@ body{
     overflow-x: hidden;
     color: #212529;
 }
+.spacer {
+    height: 8vh;
+}
+
 
 /*Blog styles*/
 .postList {
@@ -87,7 +91,7 @@ hr {
 /*}*/
 
 #scrollIcon a {
-    padding-top: 70px;
+    padding-top: 60px;
     pointer-events: none;
 }
 #scrollIcon span {
@@ -98,7 +102,7 @@ hr {
     height: 40px;
     margin-left: -12px;
     border-left: 2px solid #fff;
-    margin-top: 35vw;
+    margin-top: 40vw;
     border-bottom: 2px solid #fff;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -207,9 +211,9 @@ iframe {
 
 #mainMenu{
     width: 100%;
-    height: 100%;
+    height: 30vh;
     font-family: "Trebuchet MS", "sans-serif";
-    margin-top: -4vw;
+    margin-top: 2vw;
 }
 .t1 {
     display:block;
@@ -245,6 +249,13 @@ iframe {
     right: 8vw;
     left:auto;
 }
+.t1:hover {
+    border-color: white;
+    background-color: white;
+    opacity: 0.25;
+    z-index: 30;
+}
+
 .t2 {
     display:block;
     z-index:2;
@@ -323,18 +334,27 @@ iframe {
 }
 .tRegion {
     opacity: 0.1;
-    top: 0vw;
+    top: 5vw;
     z-index: 30;
 }
-.tRegion:hover {
+.t2:hover {
+    border-color: #0065e0;
+    background-color: #0065e0;
     opacity: 0.25;
     z-index: 30;
 }
+.t3:hover {
+    border-color: #e00000;
+    background-color: #e00000;
+    opacity: 0.25;
+    z-index: 30;
+}
+
 #mmText{
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 18vw;
+    margin-top: 14vw;
     position:relative;
     font-size: 3vw;
     font-weight: bold;
