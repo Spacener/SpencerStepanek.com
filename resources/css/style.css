@@ -1,65 +1,58 @@
+
+/* SpencerStepanek.com */
+/* 9/21/21 */
+
+/* All Pages*/
+
 html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: #8c8c8c;
+    /*background-color: #8c8c8c;*/
+    background-color: white;
     overflow-x: hidden;
-    color: #212529;
+    color: black;
 }
 .spacer {
-    height: 8vh;
+    height: 20px;
 }
-
-
-/*Blog styles*/
-.postList {
-    justify-content: center;
-    margin-bottom: 4vw;
-}
-.post {
-    align-self: center;
-    width: 40vw;
-    height: auto;
-    background-color: #cfcfcf;
-    margin: auto;
-    margin-top: 4vw;
-    border: solid white 5px;
-    border-radius: 4px;
-    font-size: 1vw;
-}
-.postHeader {
-    width: 100%;
-    height: 3vw;
-    background-color: #d9d9d9;
-    padding-top: 0.6vw;
-    padding-left: 1vw;
-    font-weight: bold;
-    font-size: 1.25vw;
-    /*padding-top: 1vw;*/
-    text-align: left;
-}
-.postBody {
-    padding: 2vw;
-    padding-top: 0vw;
-}
-
-
-
-
-
-
 hr {
     height: 2px;
     background-color: white;
     /*#954a4a*/
     border: none;
 }
+.navbar-custom{
+    font-family: "Trebuchet MS", "sans-serif";
+    height: 3vw;
+    background-color: #cfcfcf;
+    /*border-radius: 10;*/
+    border-bottom: solid black 2px;
+    /*border-color: ;*/
+}
 
 
 
 
 
-/*main page*/
+
+
+
+/*--- Main Page ---*/
+#mainBackground {
+    overflow-x: hidden;
+    /*color: #212529;*/
+    color: black;
+
+    background-image: url("../img/musicImage.jpg");
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+
+    /* eliminate scroll */
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
 #about {
     margin-top: 35vw;
 }
@@ -137,75 +130,7 @@ hr {
     }
 }
 
-/*
-brand colors
 
-deep grey #8c8c8c
-good grey #cfcfcf
-
-primary #1195fa
-danger #de1f25
-success #9821d9
-*/
-
-
-/*--- Musac ---*/
-.trackCaption {
-    font-size: 10px;
-    color: #cccccc;
-    line-break: anywhere;
-    word-break: normal;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
-    font-weight: 100;
-}
-.trackArtist {
-    color: #cccccc;
-    text-decoration: none;
-}
-.trackName {
-    color: #cccccc;
-    text-decoration: none;
-}
-iframe {
-    display: block;
-    margin: auto;
-}
-.trackColumn {
-    width: 100vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-.tracks {
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-#FGTracks1 {
-    margin-top: 4.5vw;
-}
-#FGTracks3 {
-    margin-top: 4.5vw;
-}
-#CTracks1 {
-    margin-top: 4.5vw;
-}
-#CTracks3 {
-    margin-top: 4.5vw;
- }
-
-
-
-
-.navbar-custom{
-    font-family: "Trebuchet MS", "sans-serif";
-    height: 3vw;
-    background-color: #cfcfcf;
-    /*border-radius: 10;*/
-    border-bottom: solid white 5px;
-    /*border-color: ;*/
-}
 
 /*--- Main Menu ---*/
 
@@ -227,7 +152,7 @@ iframe {
     text-align:center;
     background-color:white;
     margin-left: 42.25vw;
-    margin-top: 8vw;
+    margin-top: 100px;
 }
 .t1:before, .tRegion:after {
     content:'';
@@ -269,7 +194,7 @@ iframe {
     background-color:white;
     position: absolute;
     margin-left: -20vw;
-    margin-top: 12vw;
+    margin-top: 190px;
 }
 
 .t2:before, .t2:after {
@@ -306,9 +231,10 @@ iframe {
     text-transform:uppercase;
     text-align:center;
     background-color:white;
+    /*background-image: url('../img/musicImage.jpg');*/
     position: absolute;
     margin-left: 80vw;
-    margin-top: 12vw;
+    margin-top: 190px;
 }
 .t3:before, .t2:after {
     content:'';
@@ -380,3 +306,104 @@ iframe {
     margin-top: 6vw;
     z-index:3;
 }
+
+
+
+
+
+
+
+
+/*--- Blog styles ---*/
+.postList {
+    justify-content: center;
+    margin-bottom: 4vw;
+}
+.post {
+    align-self: center;
+    width: 40vw;
+    height: auto;
+    background-color: #cfcfcf;
+    margin: auto;
+    margin-top: 4vw;
+    border: solid black 2px;
+    border-radius: 4px;
+    font-size: 1vw;
+}
+.postHeader {
+    width: 100%;
+    height: 3vw;
+    background-color: #d9d9d9;
+    padding-top: 0.6vw;
+    padding-left: 1vw;
+    font-weight: bold;
+    font-size: 1.25vw;
+    /*padding-top: 1vw;*/
+    text-align: left;
+}
+.postBody {
+    padding: 2vw;
+    padding-top: 0vw;
+}
+
+
+/*--- Musac ---*/
+.trackCaption {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 100;
+}
+.trackArtist {
+    color: #cccccc;
+    text-decoration: none;
+}
+.trackName {
+    color: #cccccc;
+    text-decoration: none;
+}
+iframe {
+    display: block;
+    margin: auto;
+}
+.trackColumn {
+    width: 100vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.tracks {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+#FGTracks1 {
+    margin-top: 4.5vw;
+}
+#FGTracks3 {
+    margin-top: 4.5vw;
+}
+#CTracks1 {
+    margin-top: 4.5vw;
+}
+#CTracks3 {
+    margin-top: 4.5vw;
+ }
+
+
+
+
+
+/*
+brand colors
+
+deep grey #8c8c8c
+good grey #cfcfcf
+
+primary #1195fa
+danger #de1f25
+success #9821d9
+*/

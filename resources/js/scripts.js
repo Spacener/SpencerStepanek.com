@@ -1,4 +1,19 @@
 
+// SpencerStepanek.com
+// 9/21/21
+// Site-wide Javascript
+// For loading JSON data and more
+
+// Main page auto-scroll
+
+function mainPageScroll() {
+    // alert((window.innerHeight + window.scrollY))
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // alert(document.body.offsetHeight)
+    }
+}
+
+// Load blog post data
 function loadPostData() {
     $.getJSON('post_data.json', function(data) {
         let posts = $('#posts');
@@ -35,7 +50,7 @@ function loadPostData() {
 
 };
 
-
+// Load music data
 function loadMusicData() {
     $.getJSON('music_data.json', function(data) {
         let list = $('#list');

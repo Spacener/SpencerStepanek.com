@@ -31,10 +31,19 @@
     <title>Spencer  Stepanek</title>
 </head>
 
-<body>
+<body id="mainBackground">
 
 
     <%- include('../partials/header'); -%>
+
+
+    <script>
+        window.onload = function ()
+        {
+            window.onscroll = mainPageScroll()
+        }
+    </script>
+
 
 <!--    <div class="container">-->
 <!--        <div id="particles-js"></div>-->
@@ -73,22 +82,22 @@
         </a>
 
 
-        <section id="scrollIcon" class="demo">
-            <a href=""><span></span></a>
-        </section>
+<!--        <section id="scrollIcon" class="demo">-->
+<!--            <a href=""><span></span></a>-->
+<!--        </section>-->
 
     </div>
 
-    <div id="about">
+<!--    <div id="about">-->
 
-        <div id="aboutText">
-            <h1>Spencer</h1>
-            <p>Composer, multi-instrumentalist, producer, and software development enthusiast. She currently pursues a BS in Computer Science and a BMus in Music Composition at the University of Colorado, Boulder. Enjoys long walks on the beach, and picnics</p>
-        </div>
+<!--        <div id="aboutText">-->
+<!--            <h1>Spencer</h1>-->
+<!--            <p>Composer, multi-instrumentalist, producer, and software development enthusiast. She currently pursues a BS in Computer Science and a BMus in Music Composition at the University of Colorado, Boulder. Enjoys long walks on the beach, and picnics</p>-->
+<!--        </div>-->
 
-        <img src="/resources/img/portrait.png" class="w3-round parallax" alt="Spencer Stepanek" id="portrait" data-value="0">        </a>
+<!--        <img src="/resources/img/portrait.png" class="w3-round parallax" alt="Spencer Stepanek" id="portrait" data-value="0">        </a>-->
 
-    </div>
+<!--    </div>-->
 
 
     <script type="text/javascript">
